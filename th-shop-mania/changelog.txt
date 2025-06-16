@@ -1,3 +1,10 @@
+16-06-2025 = = Version 1.5.14 =
+* Update: update description.
+
+14-06-2025 = = Version 1.5.13 =
+* Update: update description.
+* Update: rtl issue fixed.
+
 28-05-2025 = = Version 1.5.12 =
 * Update: Tested with WooCommerce 9.8.5 and style updated.
 
