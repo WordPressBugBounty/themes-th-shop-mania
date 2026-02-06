@@ -1,3 +1,53 @@
+17-01-2026 = = Version 1.8.0 =
+* Update: Svg Icons replaced.
+* Update: Style updated & cart icon issue resolved.
+* Update: Header icon structure updated and style modified.
+
+14-01-2026 = = Version 1.7.9 =
+* Update: Empty Categories on import issue reolved by modifying th_shop_mania_product_list_categories().
+
+12-01-2026 = = Version 1.7.8 =
+* Update: Categories not showing in mobile issue resolved.
+
+06-01-2026 = = Version 1.7.7 =
+* Update: social icon and mobile variation style issue resolved.
+
+
+31-12-2025 = = Version 1.7.6 =
+* New: RTL CSS Added.
+* Update: Style updated.
+* Update: Remove current-menu-item class from menu items with # links using add_filter('nav_menu_css_class', function ($classes, $item) {})
+
+
+17-12-2025 = = Version 1.7.5 =
+* Update: add_action('woocommerce_before_single_product_summary', 'th_shop_mania_prev_next_product', 0); commented.
+* Style : variation style issue fixed.
+* Fixed : wishlist and compare issue fixed.
+
+12-12-2025 = = Version 1.7.4 =
+* New: Wishlist double icon issue resolved.
+
+25-11-2025 = = Version 1.7.3 =
+* New: Move to top issue resolved.
+* Update: Style updated.
+* Category not displaying by default issue resolved.
+* Update: Style changes.
+* Update: Menu Icon replaced with svg.
+
+25-11-2025 = = Version 1.7.2 =
+* New: Move to top issue resolved.
+* Update: Style updated.
+
+09-11-2025 = = Version 1.7.1 =
+* New: Circular Progress bar added in move to top.
+* Update: Style issue resolved.
+* New: New Enable options addded in header icons.
+
+06-10-2025 = = Version 1.7.0 =
+* Update: Add to cart loading issue resolved.
+* Update: Quick View in shop page issue resolved.
+* Update: Wishlist, variation style updated.
+
 30-09-2025 = = Version 1.6.9 =
 * Update: Single page gallery images hover issue resolved.
 * Update: Elementor addons gallery images hover issue resolved.

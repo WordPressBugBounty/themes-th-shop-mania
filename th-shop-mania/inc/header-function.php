@@ -115,7 +115,7 @@ $th_shop_mania_pro_menu_effect = get_theme_mod('th_shop_mania_pro_menu_effect', 
            <div class="thunk-icon-market">
             <?php if ( class_exists( 'THWL_Wishlist' ) || defined( 'YITH_WCWL_SLUG' ) ) { ?>
               <a class="whishlist" aria-label="Wishlist" href="<?php echo esc_url(apply_filters('th_shop_mania_whishlist_url',' ','','')); ?>">
-       <span class="th-icon th-icon-heartline"></span></a> 
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 stroke-[1.5px]" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg></a> 
      <?php } ?>
 
         <?php do_action( 'th_shop_mania_account' ); 
@@ -149,14 +149,14 @@ $th_shop_mania_pro_menu_effect = get_theme_mod('th_shop_mania_pro_menu_effect', 
                 <div class="menu-toggle">
                     <button type="button" class="menu-btn" id="menu-btn" aria-label="Menu">
                         <div class="btn">
-                           <span class="th-icon th-icon-TextEditor-Icons-01"></span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
                        </div>
                     </button>
                 </div>
                 <?php if ( class_exists( 'THWL_Wishlist' ) || defined( 'YITH_WCWL_SLUG' ) ) { ?>
                 <div>
                   <a class="whishlist" aria-label="Wishlist" href="<?php echo esc_url(apply_filters('th_shop_mania_whishlist_url',' ','','')); ?>">
-                  <span class="th-icon th-icon-heartline"></span></a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart w-6 h-6 stroke-[1.5px]" aria-hidden="true"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path></svg></a>
                 </div>
               <?php } ?>
                 <div>
@@ -211,7 +211,7 @@ $th_shop_mania_pro_menu_effect = get_theme_mod('th_shop_mania_pro_menu_effect', 
         <div class="menu-toggle">
                 <button type="button" class="menu-btn" id="menu-btn" aria-label="Menu">
                         <div class="btn">
-                           <span class="th-icon th-icon-TextEditor-Icons-01"></span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify w-5 h-5 text-gray-500 group-hover:text-gray-700" aria-hidden="true"><path d="M3 5h18"></path><path d="M3 12h18"></path><path d="M3 19h18"></path></svg>
                        </div>
                 </button>
         </div>
@@ -242,7 +242,7 @@ add_action( 'th_shop_mania_below_header', 'th_shop_mania_below_header_markup' );
 if ( ! function_exists( 'th_shop_mania_logo' ) ){
 function th_shop_mania_logo($headertype = ''){
 $title_disable          = get_theme_mod( 'title_disable','enable');
-$tagline_disable        = get_theme_mod( 'tagline_disable','enable');
+$tagline_disable        = get_theme_mod( 'tagline_disable','');
 $description            = get_bloginfo( 'description', 'display' );
 th_shop_mania_custom_logo(); 
 if($title_disable!='' || $tagline_disable!=''){
@@ -276,10 +276,11 @@ if( $description || is_customize_preview() ):?>
 // Product search
 /***************************/
 function th_shop_mania_product_search_box(){  
-  if ( shortcode_exists( 'th-aps' ) ) {
+    $th_shop_mania_enable_search = esc_html(get_theme_mod('th_shop_mania_enable_search',true));
+  if ( $th_shop_mania_enable_search && shortcode_exists( 'th-aps' ) ) {
     echo do_shortcode('[th-aps]');          
   }
-  elseif ( shortcode_exists('tapsp') ){
+  elseif ( $th_shop_mania_enable_search && shortcode_exists('tapsp') ){
     echo do_shortcode('[tapsp]');
     }       
 }

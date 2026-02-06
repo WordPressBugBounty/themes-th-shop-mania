@@ -3,8 +3,8 @@ Contributors: ThemeHunk
 Tags: custom-logo, block-patterns, editor-style, e-commerce, blog, grid-layout, featured-images, two columns, one-column, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, , custom-menu, RTL-language-support, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready.
 Requires at least: WordPress 5.5
 Requires PHP: 5.6
-Tested up to: 6.8
-Stable tag: 1.6.9
+Tested up to: 6.9
+Stable tag: 1.8.0
 License: GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -26,19 +26,9 @@ Yes, this theme is tested with latest version of WordPress, you can use it for y
  
 License for images:
 == Screenshots ==
-https://www.pexels.com/photo/woman-wearing-gray-blazer-982585/
-https://www.pexels.com/photo/photo-of-man-wearing-white-shirt-2698918/
-https://www.pexels.com/photo/young-men-wearing-comfortable-loungewear-while-posing-in-studio-9775768/
-https://www.pexels.com/photo/elegant-fashion-portrait-of-two-women-in-dresses-31094918/
-
-
-https://www.pexels.com/photo/round-brown-wooden-table-with-chairs-inside-room-1668860/
-https://www.pexels.com/photo/white-plates-on-table-238377/
-https://www.pexels.com/photo/interior-design-of-home-1643383/
-https://www.pexels.com/photo/string-lights-hanged-on-bed-frame-1329711/
-https://www.pexels.com/photo/person-doing-online-shopping-8939517/
-https://www.pexels.com/photo/father-reading-a-book-to-his-daughter-8205391/
-https://www.pexels.com/photo/brown-wooden-chair-beside-white-curtain-7193704/
+https://www.pexels.com/photo/man-sitting-holding-white-desk-globe-1036628/
+https://www.pexels.com/photo/woman-wearing-white-long-sleeve-dress-with-curly-hair-7304341/
+https://images.pexels.com/photos/8562440/pexels-photo-8562440.jpeg
 
 == Theme License & Copyright ==
 Th Shop Mania is distributed under the terms of the GNU GPL
